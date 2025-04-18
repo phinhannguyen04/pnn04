@@ -1,0 +1,590 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 50px;
+  height: 80px;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* SECTION 1: Hero */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+
+
+.hero-section .text h2 {
+  font-size: 45px;
+}
+
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: .1s;
+}
+
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.personal {
+  /* background-color: #4a76ee; */
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
+
+.personal .contact {
+  font-weight: bold;
+}
+/* SECTION 2: Skills */
+.skills-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
+
+/* SECTION 3: Testimony */
+.testimony-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.testimony-section h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.testimony-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimony-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+
+.testimony-section .group .person-details img {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimony-section .group .person-details p {
+  font-weight: 600;
+}
+
+.testimony-section .group .person-details p:last-child {
+  font-weight: normal;
+}
+
+.testimony-section .group .text {
+  flex: 8;
+}
+
+/* SECTION 4: Contact */
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(.9);
+}
+
+/* SECTION 5: MY EUDUCATION */
+.my-education {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.my-education h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.my-education .education-item {
+  margin-bottom: 20px; 
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+
+.my-education .education-item h3 {
+  padding-left: 15px; 
+  border-left: 5px solid gold; 
+  margin-bottom: 5px; 
+}
+
+.my-education .education-item:last-child {
+  border-bottom: none; 
+}
+
+.my-education .institution {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.my-education .description {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+
+/* SECTION 6: PROJECT */
+.project {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.project h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.filter-menu {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filter-button {
+  border: none;
+  background-color: transparent;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.filter-button.active {
+  color: gold;
+  font-weight: bold;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+  overflow: hidden; /* Để đảm bảo hình ảnh không tràn ra ngoài */
+  border-radius: 5px; /* Bo tròn góc (tùy chọn) */
+}
+
+.grid-item img {
+  display: block; /* Loại bỏ khoảng trắng thừa dưới hình ảnh */
+  width: 50%;
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng hover nhẹ (tùy chọn) */
+}
+
+.grid-item img:hover {
+  transform: scale(1.05); /* Phóng to nhẹ khi hover (tùy chọn) */
+}
+
+/* SECTION 7 */
+.faq-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  max-width: 1200px;
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.faq-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.faq-header {
+  margin-bottom: 40px;
+}
+
+.faq-tag {
+  color: #ffc107; /* Màu vàng */
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.faq-header h2 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #222;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  padding: 15px 0;
+  display: flex;
+  align-items: center; /* Căn giữa icon và text theo chiều dọc */
+  width: 100%;
+  text-align: left; /* Đảm bảo text luôn ở bên trái */
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+}
+
+.faq-question i {
+  margin-right: 15px;
+  color: #777;
+  transition: transform 0.3s ease-in-out;
+  flex-shrink: 0; /* Ngăn icon bị thu nhỏ */
+}
+
+.faq-question span {
+  flex-grow: 1; /* Cho phép text chiếm phần không gian còn lại */
+}
+
+.faq-answer {
+  padding: 0 0 0 35px; /* Thụt lề cho phần trả lời để thẳng hàng với text câu hỏi */
+  color: #777;
+  line-height: 1.6;
+  height: 0; /* Ẩn hoàn toàn khi đóng */
+  overflow: hidden;
+  transition: height 0.3s ease-in-out; /* Thay đổi transition sang height */
+}
+
+.faq-answer.open {
+  height: auto; /* Tự động điều chỉnh chiều cao khi mở */
+  padding-bottom: 15px; /* Thêm padding dưới khi mở */
+}
+
+.faq-item.active .faq-question {
+  color: #222;
+}
+
+.faq-item.active .faq-question i {
+  color: #333;
+}
+
+.faq-image {
+  flex-shrink: 0;
+  max-width: 400px;
+  margin-left: 40px;
+}
+
+.faq-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .faq-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .faq-image {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .faq-answer {
+    padding-left: 20px; /* Điều chỉnh thụt lề trên màn hình nhỏ */
+  }
+}
+
+@media (max-width: 850px) {
+  /* SECTION 1: Hero */
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+  .personal {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 740px) {
+  /* SECTION 1: Hero */
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot img {
+    width: 300px;
+  }
+
+  .personal {
+    grid-template-columns: 1fr;
+  }
+
+  /* SECTION 3: Testimony */
+  .testimony-section {
+    text-align: center;
+  }
+
+  .testimony-section .group {
+    flex-direction: column;
+  }
+
+  /* SECTION 4: Contact */
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /* NAVBAR */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* SECTION 1: Hero */
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-section .text {
+    background-color: antiquewhite;
+    text-align: center;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  .hero-section .text .description {
+    height: auto;
+    width: auto;
+  }
+
+  .personal {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* SECTION 2: Skills */
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+
+  /* SECTION 3: Testimony */
+  .testimony-section {
+    padding: 0 20px;
+  }
+
+  /* SECTION 4: Contact */
+  .contact-section {
+    text-align: center;
+    padding: 0 20px;
+  }
+}

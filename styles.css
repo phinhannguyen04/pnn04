@@ -310,52 +310,91 @@ nav .right a span {
 
 .project h2 {
   font-size: 35px;
-  margin-bottom: 30px;
   text-align: center;
 }
 
-.filter-menu {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  justify-content: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Cột nhãn tự động, cột giá trị chiếm phần còn lại */
+  gap: 10px; /* Khoảng cách giữa các hàng và cột */
+  margin-top: 50px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
 }
 
-.filter-button {
-  border: none;
-  background-color: transparent;
-  padding: 8px 15px;
-  cursor: pointer;
-  font-size: 16px;
+.grid-container h3 {
+  grid-column: 1 / -1; /* Tiêu đề trải dài trên cả hai cột */
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 27px;
+}
+
+.grid-container .label {
+  font-weight: bold;
   color: #333;
 }
 
-.filter-button.active {
-  color: gold;
+.grid-container .value {
+  color: #555;
+}
+
+.grid-container .description-label {
+  grid-column: 1 / -1; /* Nhãn "Description" trải dài */
   font-weight: bold;
+  color: #333;
+  margin-top: 10px;
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 10px;
+.grid-container .description-value {
+  grid-column: 1 / -1; /* Giá trị "Description" trải dài */
+  color: #555;
+  white-space: pre-line; /* Giữ nguyên định dạng dòng nếu có */
 }
 
-.grid-item {
-  overflow: hidden; /* Để đảm bảo hình ảnh không tràn ra ngoài */
-  border-radius: 5px; /* Bo tròn góc (tùy chọn) */
+.grid-container .github-label {
+  font-weight: bold;
+  color: #333;
 }
 
-.grid-item img {
-  display: block; /* Loại bỏ khoảng trắng thừa dưới hình ảnh */
-  width: 50%;
-  height: auto;
-  transition: transform 0.3s ease-in-out; /* Hiệu ứng hover nhẹ (tùy chọn) */
+.grid-container .github-value a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-.grid-item img:hover {
-  transform: scale(1.05); /* Phóng to nhẹ khi hover (tùy chọn) */
+.grid-container .github-value a:hover {
+  text-decoration: underline;
 }
+
+.description {
+  grid-column: 1 / -1; /* Khu vực Backend trải dài */
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.description h4 {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.description p {
+  margin: 0;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.thumbnail {
+  width: 10%; /* Đặt chiều rộng mong muốn (ví dụ: 100px) */
+  height: auto;  /* Chiều cao tự động điều chỉnh theo tỷ lệ khung hình */
+  object-fit: cover; /* Lấp đầy vùng chứa, có thể cắt ảnh */
+  border: 1px solid #ccc; /* Thêm viền mỏng (tùy chọn) */
+  }
+
 
 /* SECTION 7 */
 .faq-section {

@@ -64,7 +64,7 @@ nav .right a span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 25px;
   margin: 50px 0;
   margin-bottom: 100px;
   gap: 40px;
@@ -128,8 +128,11 @@ nav .right a span {
 }
 
 .skills-section h2 {
+  font-size: 2.5em;
+  margin: 0;
+  padding-bottom: 15px;
+  color: #222;
   text-align: center;
-  font-size: 35px;
 }
 
 .skills-section .text {
@@ -211,7 +214,7 @@ nav .right a span {
 
 /* SECTION 4: Contact */
 .contact-section {
-  padding: 0 50px;
+  padding: 0 25px;
   margin-bottom: 100px;
 }
 
@@ -304,12 +307,15 @@ nav .right a span {
 
 /* SECTION 6: PROJECT */
 .project {
-  padding: 0 50px;
+  padding: 0 25px;
   margin-bottom: 100px;
 }
 
 .project h2 {
-  font-size: 35px;
+  font-size: 2.5em;
+  margin: 0;
+  padding-bottom: 15px;
+  color: #222;
   text-align: center;
 }
 
@@ -395,6 +401,61 @@ nav .right a span {
   border: 1px solid #ccc; /* Thêm viền mỏng (tùy chọn) */
   }
 
+.tags {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+  display: flex; /* Sử dụng flexbox để các tag có thể xuống dòng */
+  flex-wrap: wrap; /* Cho phép các tag xuống dòng khi không đủ không gian */
+  align-items: center; /* Căn giữa các tag theo chiều dọc (nếu cần) */
+}
+
+.tag {
+  display: inline-block;
+  background-color: gold;
+  color: black;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px; /* Thêm margin-bottom để tạo khoảng cách khi xuống dòng */
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive cho màn hình nhỏ hơn 768px (ví dụ: điện thoại) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Chuyển sang bố cục 1 cột */
+  }
+
+  .tags {
+    font-size: 0.8em; /* Giảm kích thước chữ cho tag */
+  }
+
+  .tag {
+    padding: 4px 8px; /* Giảm padding cho tag */
+    margin-right: 3px; /* Giảm margin-right */
+    margin-bottom: 3px; /* Giảm margin-bottom */
+  }
+}
+
+/* Responsive cho màn hình rất nhỏ (ví dụ: một số điện thoại nhỏ hơn) */
+@media (max-width: 480px) {
+  .tags {
+    font-size: 0.7em; /* Giảm thêm kích thước chữ */
+  }
+
+  .tag {
+    padding: 3px 6px; /* Giảm thêm padding */
+    margin-right: 2px; /* Giảm thêm margin-right */
+    margin-bottom: 2px; /* Giảm thêm margin-bottom */
+  }
+}
 
 /* SECTION 7 */
 .faq-section {

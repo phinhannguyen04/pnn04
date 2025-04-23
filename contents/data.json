@@ -1,0 +1,135 @@
+{
+    "projects": [
+        {
+            "title": "Deepfake voice detection",
+            "backend": {
+                "title": "Backend",
+                "duration": "1/2025 - 4/2025"
+            },
+            "technologies": [
+                "#Python",
+                "#Pytorch",
+                "#Numpy",
+                "#Matplotlib",
+                "#Scikit-learn"
+            ],
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus amet culpa esse doloribus explicabo similique, nobis magni doloremque atque illo sunt et libero reiciendis facilis inventore, itaque consequatur fugit ullam. Laboriosam, voluptatibus temporibus dolorum iure officiis autem sunt fugit ipsam consectetur natus dolorem officia deleniti! Illo incidunt fuga ipsam nisi!",
+            "github": "#"
+        },
+        
+        {
+            "title": "Flight Reservation",
+            "backend": {
+                "title": "Backend",
+                "duration": "1/2025 - 4/2025"
+            },
+            "technologies": [
+                "#Php",
+                "#Laravel",
+                "#MySQL",
+                "#Fillament",
+                "#HTML",
+                "#CSS"
+            ],
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus amet culpa esse doloribus explicabo similique, nobis magni doloremque atque illo sunt et libero reiciendis facilis inventore, itaque consequatur fugit ullam. Laboriosam, voluptatibus temporibus dolorum iure officiis autem sunt fugit ipsam consectetur natus dolorem officia deleniti! Illo incidunt fuga ipsam nisi!",
+            "github": "#"
+        }
+    ],
+    "education": [
+        {
+            "title": "B2 VSTEP",
+            "institution": "English certification",
+            "year": "2024",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text."
+        },
+        
+        {
+            "title": "Information System",
+            "institution": "Can Tho University",
+            "year": "2022 - 2026",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text."
+        },
+        
+        {
+            "title": "Student",
+            "institution": "Lai Vung 1 High School",
+            "year": "2022 - 2026",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Python",
+            "image": "images/python.webp",
+            "alt": "python logo"
+        },
+
+        {
+            "name": "Pytorch",
+            "image": "images/pytorch.webp",
+            "alt": "pytorch logo"
+        },
+
+        {
+            "name": "django",
+            "image": "images/django.webp",
+            "alt": "django logo"
+        },
+
+        {
+            "name": "Flask",
+            "image": "images/flask.webp",
+            "alt": "flask logo"
+        },
+
+        {
+            "name": "php",
+            "image": "images/php.webp",
+            "alt": "php logo"
+        },
+
+        {
+            "name": "Laravel",
+            "image": "images/laravel.webp",
+            "alt": "php logo"
+        },
+
+        {
+            "name": "JavaScript",
+            "image": "images/javascript-logo.webp",
+            "alt": "javascript logo"
+        },
+
+        {
+            "name": "Node.js",
+            "image": "images/typescript.webp",
+            "alt": "typescript logo"
+        },
+
+        {
+            "name": "React.js",
+            "image": "images/react-logo.webp",
+            "alt": "react logo"
+        }
+    ],
+
+    "faqs" : [
+        {
+            "id" : 1,
+            "question" : "What Is My Major?",
+            "answer" : "My major is Information Systems, with a focus on analyzing, designing, developing, and deploying information systems within a business environment. Furthermore, I am equipped with skills in database management, web and mobile application development, business analysis, and system integration solutions. This provides me with a solid foundation in both information technology and management."
+        },
+
+        {
+            "id" : 2,
+            "question" : "How Can I Contribute To Your Team?",
+            "answer" : "With my knowledge of Python and Deep Learning, along with application programming projects honed through research, combined with my communication, presentation, and problem-solving skills, I am confident in my ability to assist colleagues in thriving together within the company environment."
+        },
+        
+        {
+            "id" : 3,
+            "question" : "What Are My Career Goals?",
+            "answer" : "Within the next two years, I aspire to become a specialist in the field of Machine Learning. Simultaneously, I aim to research and develop technologies that meet the needs of businesses and the market."
+        }
+    ]
+}
